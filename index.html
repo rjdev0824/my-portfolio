@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Web</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="logo">
+            <p>RJ</p>
+        </div>
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="scroll-effect"></div>
+    <!-- home-page -->
+    <div id="home">
+        <div class="container">
+            <div class="profile home-profile">
+                <img src="imgs/Profile.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>I'm <span>RJ MENDAROS</span></h1>
+                <p>Aspiring Back-End Developer | Web Development Enthusiast.</p>
+                <div class="social-icons home-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="button">
+                    <button class="btn"><a href="#contact">Hire Me <i class="fa-regular fa-paper-plane"></i></a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- about-page -->
+    <div id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col">
+                    <div class="about-left">
+                        <div class="profile">
+                            <img src="imgs/Profile.jpg" alt="">
+                            <span class="img-bg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col">
+                    <div class="about-right">
+                        <h1 class="sub-title about-title">About Me</h1>
+                        <p class="about-content">Hi, My name Rj Mendaros, I am a newly graduate of the course Bachelor of Science in Information Technology. My dream is to become a Web Developer.
+                            All I can say about myself is i have a passion for technology ang enjoying problem solving. During my studies, I gained hands-on
+                            experience in programming and web developement, and I'm very excited to apply my skills and contribute to innovative projects
+                            in the tech industy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="tab-title">
+                    <h1>Skills</h1>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('tech')">Tech Stack</p>
+                    <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                </div>
+                <div class="tab-contents active-tab" id="tech">
+                    <div class="items">
+                        <ul id="list">
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/html.png" alt="">
+                                    <h3>HTML<span>Advance</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/css.png" alt="">
+                                    <h3>CSS<span>Advance</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/js.png" alt="">
+                                    <h3>Javascript <span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/php.png" alt="">
+                                    <h3>PHP<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/java.png" alt="">
+                                    <h3>Java<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/cpp.png" alt="">
+                                    <h3>C++<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/bootstrap.png" alt="">
+                                    <h3>Bootstrap<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/visual basic.png" alt="">
+                                    <h3>VB.Net<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/vuejs.png" alt="">
+                                    <h3>Vue<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/laravel.png" alt="">
+                                    <h3>Laravel<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/tailwind.png" alt="">
+                                    <h3>Tailwind<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tech">
+                                <div class="skill-icon">
+                                    <img src="imgs/reactjs.png" alt="">
+                                    <h3>React<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="show-more">
+                            <p id="show-more-tech">Show More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id="tools">
+                    <div class="items">
+                        <ul id="tool-list">
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/git.png" alt="">
+                                    <h3>GIT<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/github.png" alt="">
+                                    <h3>GITHUB<span>Beginner</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/npm-logo.png" alt="">
+                                    <h3>NPM<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-icon">
+                                    <img src="imgs/mysql.png" alt="">
+                                    <h3>MySQL<span>Intermediate</span></h3>
+                                </div>
+                            </li>
+                            <li class="hidden-tool">
+                                <div class="skill-icon">
+                                    <img src="imgs/vscode.png" alt="">
+                                    <h3>VS Code<span>Advance</span></h3>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <div class="show-more">
+                            <p id="show-more-tool">Show More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- services-page -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title service-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I started learning to become a web developer in year 2021 while I was studying. I have 5 months of actual work experience during my internship training and I gained hands-on
+                        experience in programming and web developement.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Technical Support</h2>
+                    <p>I am currently involved in computer maintenance tasks such as reformatting, installing operating systems on computers, and replacing components such as RAM and Storage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio-page -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <img src="imgs/work-1.png">
+                    <div class="layer">
+                        <h3>My Portfolio Website</h3>
+                        <a href="#">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact-page -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title contact-title">Contact Me</h1>
+            <div class="contact-row">
+                <div class="contact-col">
+                    <div class="contact-left">
+                        <h1 class="contact-left-title">- Get in Touch -</h1>
+                        <p class="contact-left-reminder">If you have any concerns regarding to this website, you may contact the following information:</p>
+                        <p><i class="fa-solid fa-envelope"></i> rjrmendaros@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +63 912-345-6789</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Lagonoy, Camarines Sur</p>
+                        <div class="button">
+                            <button class="btn" onclick="downloadFile()">My Resume <i class="fa-solid fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter your name" required>
+                            <input type="email" name="Email" placeholder="Enter your email" required>
+                            <textarea name="Message" id="" rows="6" placeholder="Write message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="social-icons footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <span class="footer-creator">Created By <a href="#">RJ MENDAROS</a>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <script src="https://kit.fontawesome.com/1b538e6f84.js" crossorigin="anonymous"></script>
+    <script src="dist/script.js"></script>
+</body>
+</html>
