@@ -405,9 +405,9 @@ nav .fa-solid{
     font-size: 14px;
     transition: height 0.5s;
 }
-#portfolio .layer h3{
+#portfolio .layer h2{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 #portfolio .layer a{
     color: #fff;
