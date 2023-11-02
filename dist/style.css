@@ -703,6 +703,9 @@ footer .social-icons a:hover{
     .hidden-tool{
         display: none;
     }
+    #portfolio .layer h2{
+        font-size: 13px;
+    }
     
 }
 @media screen and (max-width: 596px){
