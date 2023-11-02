@@ -731,6 +731,9 @@ footer .social-icons a:hover{
     #portfolio{
         padding: 70px 0%;
     }
+    #portfolio .layer h2{
+        font-size: 13px;
+    }
     /* contact */
     .contact-row {
         grid-template-columns: repeat(1, 1fr);
